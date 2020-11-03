@@ -19,7 +19,7 @@ def run_game():
     while True:
         # Отслеживание событий клавиатуры и мыши
         for event in pygame.event.get():
-            if event.type == pygame.QUIT():
+            if event.type == pygame.QUIT:
                 sys.exit()
 
         # При каждом проходе цикла перерисовывается экран
