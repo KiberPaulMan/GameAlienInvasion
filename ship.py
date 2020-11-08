@@ -1,7 +1,7 @@
 import pygame
 
 
-class Ship:
+class Ship():
 
     def __init__(self, ai_settings, screen):
         """Инициализация корабля и задание начальной позиции"""
@@ -22,7 +22,7 @@ class Ship:
         self.moving_right = False
         self.moving_left = False
 
-    def update(self, step=1):
+    def update(self):
         """Обновляет позицию корабля с учетом флагов."""
         # Обновляется атрибут center, не rect.
         if self.moving_right and self.rect.right < self.screen_rect.right:
