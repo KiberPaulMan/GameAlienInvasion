@@ -18,7 +18,7 @@ class Settings:
 
         # Настройки пришельцев
         # скорость снижения флота по вертикали
-        self.fleet_drop_speed = 10
+        self.fleet_drop_speed = 2
 
         # Подсчет очков
         self.alien_points = 50
@@ -30,9 +30,9 @@ class Settings:
         self.initialize_dynamic_settings()
 
     def initialize_dynamic_settings(self):
-        self.ship_speed_factor = 1.5
+        self.ship_speed_factor = 1.0
         self.bullet_speed_factor = 3.0
-        self.alien_speed_factor = 1.0
+        self.alien_speed_factor = 0.7
 
         # fleet_direction = 1 обозначает движение вправо; а -1 - влево.
         self.fleet_direction = 1
